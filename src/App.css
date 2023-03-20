@@ -1,38 +1,356 @@
-.App {
+
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+*{
+   box-sizing: border-box;
+    margin: 0; 
+  padding: 0;
+}
+.main-nav{
+  background-color: #160A21;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  height: 62px;
+}
+
+.logo{
+  width: 256px;
+  height: 44px;
+  grid-column: 2;
+}
+li{
+  list-style: none;
+}
+.authentication ul{
+display: flex;
+list-style: none;
+padding-right: 20px;
+
+}
+.authentication ul li a{
+text-decoration: none;
+cursor: pointer;
+color:  white;
+padding: 0 30px;
+
+}
+.white-nav{
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  color: #160A21;
+}
+.homeIcon{
+ size: 2em;
+ padding-left: 14px;
+}
+.white-nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+
+}
+.white-nav li a{
+  color:#160A21 ;
+  float: left;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+
+/* HOME */
+.bg{
+  background-image: url(./images/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.bg1{
+  background-image: url(./images/bg1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.home-container{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 70px;
+  padding-top: 70px;
+  
+}
+.home-text{
+   
+  color: white;
+  /* line-height: ; */
+  /* padding-top: 25px ; */
+}
+h1{
+ font-family: 'Inter', sans-serif;
+ font-size: 4.5rem;
+ 
+}
+
+.purple{
+  color:#A22DBA;
+}
+.white{
+  color: #FFFFFF;
+}
+.home-img{
+  width: 450px;
+  height: 450px;
+  /* margin: 0px 40px; */
+}
+.home-img:hover{
+  transform: skew(1.3);
+  transition: width .35s ease-in-out;
+}
+
+
+/* SEARCH BOX */
+.search{
+  width: 320px;
+ /* height: 400px; */
+ padding: 40px 30px;
+ background: rgba(198, 145, 250, 0.2);
+border-radius: 64px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+}
+.searchBoxes{
+/* width: 300.32px; */
+padding: 8px;
+border-radius: 100px;
+margin: 12px;
+
+}
+.a{
+  background-color: #70DEFA;
+  
+}
+.b{
+background-color: #FFF7A5;
+}
+.c{
+  background-color: #FD58F4;
+}
+.d{
+  background-color: #FFFEFF;
+}
+
+/* MID PAGE */
+.mid-page{
+  background-color: #1E1E1E;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+ padding: 0px 70px;
+}
+.mid-page img{
+  Width:350px;
+ 
+
+}
+.mid-page-img{
+  transform: rotate(-10.15deg);
+  transition: all 3s;
+}
+.text{
+Width:800px;
+text-align: center;
+}
+
+/* PAGES */
+.pages{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+ .box{
+  padding: 1rem 7rem;
+  margin: 3.3rem 0;
+  width: 26rem;
+
+  
+ }
+ .right{
+  margin-top:6rem;
+ }
+
+ .box1{
+  background: url(./images/box1.png),#8F4DCB center;
+  background-size:2.7rem;
+ background-repeat: no-repeat;
+ background-position: left;
+ 
+ 
+ 
+ }
+ .box2{
+  background:url(./images/box2.png),#CF9BFE center;
+  background-size:2.7rem;
+  background-repeat: no-repeat;
+  background-position: left;
+ }
+ .box3{
+  background:url(./images/box3.png),#F0E1FF;
+  background-size:2.7rem;
+  background-repeat: no-repeat;
+  background-position: left;
+  
+ 
+ 
+ }
+ .box4{
+  background:url(./images/box4.png),#FFB548;
+  background-size:2.7rem;
+  background-repeat: no-repeat;
+  background-position: right;
+ 
+ }
+ .box5{
+  background:url(./images/box5.png),#FEF5A8;
+  background-size:2.7rem ;
+  background-repeat: no-repeat;
+  background-position: right;
+ }
+ .box6{
+  background:url(./images/box6.png),#FFF6D7;
+  background-size:2.7rem;
+  background-repeat: no-repeat;
+  background-position: right;
+ }
+
+ .line{
+  border-left: 4px solid  #FFFFFF;
+  height:355px;
+  width: 1px;
+ 
+ }
+
+/* STORY PAGE */
+.stories-page{
+padding: 60px 70px;
+}
+ h2{
+  color: #FFFFFF;
+  font-size: 2.5rem;
   text-align: center;
+
+}
+.stories{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.story-box {
+  border: 8px solid rgba(156, 139, 139, 0.55);
+  width: 16rem;
+  height: 20rem;
+  background-image: url(./images/story1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.sub-story-box{
+  position: relative;
+  color: #FFFFFF;
+  background-color:#000000;
+  border: 4px solid rgba(156, 139, 139, 0.55);
+  font-size: 10px;
+  text-align: center;
+  padding: 12px;
+  width: 12rem;
+  top: 17.5rem;
+  left: 1.5rem;
+}
+.sub-story-box a{
+  font-size: 10px;
+  text-decoration: none;
+  color: #FFFFFF;
+  position: relative;
+  top: 5px;
+  left: 50px;
+  
+}
+.arrow{
+  background: rgba(197, 138, 138, 0.59);
+  color:#1E1E1E;
+  padding: 4px;
+  border-radius: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* LOVE PAGE CSS */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.love{
+  background-image: url(./images/loveBg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  padding: 5rem 20rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.love p{
+  margin: 30px 0;
+}
+.love-search{
+  background-color:  rgba(207, 155, 254, 0.7);
+  width: 40rem;
+  height: 4rem;
+  border-radius: 90px;
+  margin: 30px 0;
+
+}
+
+
+
+
+
+.search-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 30px 5px;
+}
+
+.search-container input[type=text] {
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #1E1E1E;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+.btn{
+  background-color: transparent;
+  border: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-container button:hover {
+  background-color: #3e8e41;
 }
