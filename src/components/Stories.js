@@ -1,5 +1,4 @@
 import React from 'react'
-import story1 from '../images/story1.png';
 import { FaArrowRight } from 'react-icons/fa';
 import { FaArrowLeft } from 'react-icons/fa';
 import story2 from '../images/story2.png';

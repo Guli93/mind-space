@@ -24,7 +24,7 @@ const Home = () => {
             <p>TO THE SPACE OF MIND</p>
         </div>
         <div className='home-atro'>
-            <img className='home-img' src={homeImg}></img>
+            <img className='home-img' src={homeImg} alt="/"></img>
         </div>
        <div>
        <SearchBox/>
