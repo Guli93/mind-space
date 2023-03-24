@@ -7,10 +7,12 @@ import MidPage from './components/MidPage';
 import Pages from './components/Pages';
 import Stories from './components/Stories';
 import Love from './components/Love';
+import Astronaut from './components/Astronaut';
+import Footer from './components/Footer';
 
 function App() {
   return (
-   <>
+   <div className='bg2'>
    <Navbar/>
    <Navbar2/>
    <Home/>
@@ -18,8 +20,10 @@ function App() {
   <Pages/>
   <Stories/>
   <Love/>
+  <Astronaut/>
+  <Footer/>
    
-   </>
+   </div>
   )
 }
 

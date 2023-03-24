@@ -17,13 +17,11 @@ const SearchBox = () => {
   </form>
 </div>
 
-
-
-   <div className='searchBoxes a'>Anxiety</div>
+  <div className='searchBoxes a'>Anxiety</div>
    <div className='searchBoxes b'>Depression</div>
    <div className='searchBoxes c'>PTSD</div>
    <div className='searchBoxes d'>Addiction</div>
-   <button className='btn' type="submit"><a href='/'></a>Show more</button>
+   <button className='searchBox-btn' type="submit"><a href='/'></a>Show more</button>
 </div>
 </>
   )

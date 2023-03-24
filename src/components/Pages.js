@@ -13,7 +13,9 @@ const Pages = () => {
 <div className='box box2'> pets Recommendation</div>
 <div className='box box3'>Book Recommendation</div>
 </div>
-<div className='line'></div>
+<div className='line'>
+  <div className='dot'></div>
+</div>
 <div className='right'>
 <div className='box box4'>Group Coucelling</div>
 <div className='box box5'>Therapy Session</div>
