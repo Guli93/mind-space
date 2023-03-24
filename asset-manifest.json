@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mind-space/static/css/main.db9d0aae.css",
-    "main.js": "/mind-space/static/js/main.5ca63455.js",
+    "main.css": "/mind-space/static/css/main.47d100b6.css",
+    "main.js": "/mind-space/static/js/main.e7558380.js",
     "static/js/787.69f73104.chunk.js": "/mind-space/static/js/787.69f73104.chunk.js",
     "static/media/story3.png": "/mind-space/static/media/story3.aba689c155833bde1051.png",
     "static/media/story2.png": "/mind-space/static/media/story2.24434b93085115878ff4.png",
@@ -11,6 +11,11 @@
     "static/media/bg.png": "/mind-space/static/media/bg.bbc292bccac98365a5eb.png",
     "static/media/bg1.png": "/mind-space/static/media/bg1.bbc292bccac98365a5eb.png",
     "static/media/loveBg.png": "/mind-space/static/media/loveBg.a7699d9941f6db6c7b4c.png",
+    "static/media/astro2.png": "/mind-space/static/media/astro2.22d29483ee09edafc5ed.png",
+    "static/media/astro5.png": "/mind-space/static/media/astro5.b6c0fcdd253a722d3450.png",
+    "static/media/astro4.png": "/mind-space/static/media/astro4.6838fcd05f1257611703.png",
+    "static/media/astro3.png": "/mind-space/static/media/astro3.d3248bae1ce62328a6c4.png",
+    "static/media/astro1.png": "/mind-space/static/media/astro1.5ea9cb00dad7a961a3fa.png",
     "static/media/box5.png": "/mind-space/static/media/box5.b79f0537bad314dafb12.png",
     "static/media/box2.png": "/mind-space/static/media/box2.e056fce204e2bc44035a.png",
     "static/media/box1.png": "/mind-space/static/media/box1.6b533b2c3692ba8848bb.png",
@@ -18,12 +23,12 @@
     "static/media/box3.png": "/mind-space/static/media/box3.9ec26d118fab52659c26.png",
     "static/media/box6.png": "/mind-space/static/media/box6.e6ca26b7bba304a82620.png",
     "index.html": "/mind-space/index.html",
-    "main.db9d0aae.css.map": "/mind-space/static/css/main.db9d0aae.css.map",
-    "main.5ca63455.js.map": "/mind-space/static/js/main.5ca63455.js.map",
+    "main.47d100b6.css.map": "/mind-space/static/css/main.47d100b6.css.map",
+    "main.e7558380.js.map": "/mind-space/static/js/main.e7558380.js.map",
     "787.69f73104.chunk.js.map": "/mind-space/static/js/787.69f73104.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db9d0aae.css",
-    "static/js/main.5ca63455.js"
+    "static/css/main.47d100b6.css",
+    "static/js/main.e7558380.js"
   ]
 }
