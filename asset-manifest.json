@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/mind-space/static/css/main.47d100b6.css",
-    "main.js": "/mind-space/static/js/main.e7558380.js",
+    "main.css": "/mind-space/static/css/main.2a336144.css",
+    "main.js": "/mind-space/static/js/main.4160ab19.js",
     "static/js/787.69f73104.chunk.js": "/mind-space/static/js/787.69f73104.chunk.js",
+    "static/media/bg2.png": "/mind-space/static/media/bg2.5eb1036018977822a053.png",
     "static/media/story3.png": "/mind-space/static/media/story3.aba689c155833bde1051.png",
     "static/media/story2.png": "/mind-space/static/media/story2.24434b93085115878ff4.png",
     "static/media/story1.png": "/mind-space/static/media/story1.7a87f86196ec64e80334.png",
     "static/media/home-astronaut.png": "/mind-space/static/media/home-astronaut.5db78887ff5396623c50.png",
     "static/media/mid-page.png": "/mind-space/static/media/mid-page.e59ca8d321d01f06498b.png",
-    "static/media/bg.png": "/mind-space/static/media/bg.bbc292bccac98365a5eb.png",
     "static/media/bg1.png": "/mind-space/static/media/bg1.bbc292bccac98365a5eb.png",
     "static/media/loveBg.png": "/mind-space/static/media/loveBg.a7699d9941f6db6c7b4c.png",
     "static/media/astro2.png": "/mind-space/static/media/astro2.22d29483ee09edafc5ed.png",
@@ -23,12 +23,12 @@
     "static/media/box3.png": "/mind-space/static/media/box3.9ec26d118fab52659c26.png",
     "static/media/box6.png": "/mind-space/static/media/box6.e6ca26b7bba304a82620.png",
     "index.html": "/mind-space/index.html",
-    "main.47d100b6.css.map": "/mind-space/static/css/main.47d100b6.css.map",
-    "main.e7558380.js.map": "/mind-space/static/js/main.e7558380.js.map",
+    "main.2a336144.css.map": "/mind-space/static/css/main.2a336144.css.map",
+    "main.4160ab19.js.map": "/mind-space/static/js/main.4160ab19.js.map",
     "787.69f73104.chunk.js.map": "/mind-space/static/js/787.69f73104.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47d100b6.css",
-    "static/js/main.e7558380.js"
+    "static/css/main.2a336144.css",
+    "static/js/main.4160ab19.js"
   ]
 }
