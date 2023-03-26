@@ -14,6 +14,7 @@ const Stories = () => {
     <div className='arrow'>
             <FaArrowLeft size={'2.3rem'}/>
         </div>
+    
         <div className='story-box'> 
         <div className='sub-story-box'>
             <p>I OVERCAME MY PHASE OF DEPRESSION WITHING 10 DAYS</p>
@@ -32,6 +33,7 @@ const Stories = () => {
             <a href='/'>Show more</a>
         </div>
          </div>
+
         <div className='arrow'>
             <FaArrowRight size={'2.2rem'}/>
         </div>
