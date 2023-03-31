@@ -17,10 +17,10 @@ const Navbar2 = () => {
                     <Link to='/'>Share Experiences</Link>
                 </li>
                 <li>
-                    <Link href='/'>Resources</Link>
+                    <Link to='/'>Resources</Link>
                 </li>
                 <li>
-                    <Link href='/blogs'>Blogs</Link>
+                    <Link to='/blog'>Blogs</Link>
                 </li>
                 <li>
                     <Link to='/'>Who We are</Link>

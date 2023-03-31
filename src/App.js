@@ -5,7 +5,7 @@ import Navbar2 from './components/Navbar2';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import Login from './components/Login';
-import Blog from './components/Blog';
+import Blogs from './components/Blogs';
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
   <Routes>
   <Route exact path='/' element={<Home/>}/> 
   <Route  path='/login' element={<Login/>}/> 
-  <Route  path='/blog' element={<Blog/>}/> 
+  <Route  path='/blog' element={<Blogs/>}/> 
   </Routes>
  
   <Footer/>

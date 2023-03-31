@@ -22,7 +22,11 @@ ul li a:hover{
 li{
   list-style: none;
 }
-
+li a{
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 /* BLACK NAVBAR */
 .main-nav{
@@ -648,18 +652,60 @@ hr{
   margin: 2px 6px;
 }
 
+/* BLOG PAGE CSS */
 
+.blog{
+  width: 320px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  margin: 8rem 1rem 0 1rem;
 
+}
+.blog img{
+  width: 100%;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.blog-text{
+  padding: 10px;
+  color:  #FFFFFF;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+font-size: 14px;
 
+}
+/* .blog-text1{ background-color: rgba(158, 49, 49, 0.5);}
+.blog-text2{background: rgba(59, 159, 181, 0.6);}
+.blog-text3{ background-color: rgba(135, 95, 220, 0.6);}
+.blog-text1{ background-color: rgba(158, 49, 49, 0.5);}
+.blog-text1{ background-color: rgba(158, 49, 49, 0.5);}
+.blog-text1{ background-color: rgba(158, 49, 49, 0.5);}
+.blog-text1{ background-color: rgba(158, 49, 49, 0.5);} */
 
+/* BLOGS */
 
+.blogs{
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-
-
-
-
-
-
+.blog-btn{
+  padding: 1px 6px;
+  margin-bottom: 7px;
+  border-radius: 12px;
+}
+.blogs hr{
+  width: 18rem;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  margin: 2px 6px;
+}
+.blogs li a{
+  padding-left: 7px;
+}
 
 @media screen and (max-width: 1193px) {
 
