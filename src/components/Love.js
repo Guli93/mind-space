@@ -5,11 +5,11 @@ const Love = () => {
    <div className='love'>
     <h2>DO WHAT YOU LOVE </h2>
     <div className='btns'>
-      <button className='btn'></button>
-      <button className='btn'>hello</button>
-      <button className='btn'>hello</button>
-      <button className='btn'>hello</button>
-      <button className='btn'>hello</button>
+      <button className='btn'>Music</button>
+      <button className='btn'>Pets</button>
+      <button className='btn'>Yoga</button>
+      <button className='btn'>Therapy</button>
+      <button className='btn'>Books</button>
     </div>
 
     <h3>Want to blah blah?</h3>

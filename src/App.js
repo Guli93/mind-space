@@ -3,27 +3,28 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Navbar2 from './components/Navbar2';
 import Home from './components/Home';
-import MidPage from './components/MidPage';
-import Pages from './components/Pages';
-import Stories from './components/Stories';
-import Love from './components/Love';
-import Astronaut from './components/Astronaut';
 import Footer from './components/Footer';
+import Login from './components/Login';
+import Blog from './components/Blog';
+import { BrowserRouter,Route,Routes } from 'react-router-dom';
 
 function App() {
   return (
-   <div className='bg2'>
+
+<BrowserRouter basename='/mind-space'>
+
    <Navbar/>
    <Navbar2/>
-   <Home/>
-  <MidPage/>
-  <Pages/>
-  <Stories/>
-  <Love/>
-  <Astronaut/>
+  
+  <Routes>
+  <Route exact path='/' element={<Home/>}/> 
+  <Route  path='/login' element={<Login/>}/> 
+  <Route  path='/blog' element={<Blog/>}/> 
+  </Routes>
+ 
   <Footer/>
-   
-   </div>
+  </BrowserRouter>  
+  
   )
 }
 

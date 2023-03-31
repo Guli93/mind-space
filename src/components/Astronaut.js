@@ -1,5 +1,5 @@
 import React from 'react'
-import astro1 from '../images/astro1.png';
+// import astro1 from '../images/astro1.png';
 import astro2 from '../images/astro2.png';
 import astro3 from '../images/astro3.png';
 import astro4 from '../images/astro4.png';

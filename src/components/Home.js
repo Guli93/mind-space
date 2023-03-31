@@ -1,11 +1,17 @@
 import React from 'react';
 import homeImg from '../images/home-astronaut.png';
 import SearchBox from './SearchBox';
+import MidPage from '../components/MidPage';
+import Pages from '../components/Pages';
+import Stories from '../components/Stories';
+import Love from '../components/Love';
+import Astronaut from '../components/Astronaut';
+
 
 const Home = () => {
   return (
-    <>
-    <div className='home bg'>
+    <div className='bg2'>
+    <div className='home'>
         <div className='home-container'>
         <div className='home-text'>
             <h1>
@@ -32,8 +38,15 @@ const Home = () => {
     </div>
    
     </div>
+
+
+    <MidPage/>
+  <Pages/>
+  <Stories/>
+  <Love/>
+  <Astronaut/>
     
-    </>
+    </div>
   )
 }
 

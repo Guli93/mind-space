@@ -1,28 +1,29 @@
 import React from 'react';
 import { FaHome } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Navbar2 = () => {
   return (
     <>
     <nav className='white-nav'>
-    <FaHome size={'3em'} className='homeIcon'/>
+    <Link to='/'><FaHome size={'3em'} className='homeIcon'/></Link>
         <div className='Links'>
             <ul>
                 <li>
-                    <a href='/about'>Take a Quiz</a>
+                    <Link to='/'>Take a Quiz</Link>
                 </li>
 
                 <li>
-                    <a href='/about'>Share Experiences</a>
+                    <Link to='/'>Share Experiences</Link>
                 </li>
                 <li>
-                    <a href='/about'>Resources</a>
+                    <Link href='/'>Resources</Link>
                 </li>
                 <li>
-                    <a href='/about'>Blogs</a>
+                    <Link href='/blogs'>Blogs</Link>
                 </li>
                 <li>
-                    <a href='/about'>Who We are</a>
+                    <Link to='/'>Who We are</Link>
                 </li>
             </ul>
         </div>

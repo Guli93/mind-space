@@ -3,6 +3,7 @@ import logo from '../images/logo.png';
 import { FaGithub } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -24,23 +25,24 @@ const Footer = () => {
             <a href='/'>COMMUNICATION MATERIALS</a>
             </li>
            
-            </ul>
-          <div className='flex'>
+
+            <div className='flex'>
          <button className='sm'>
-         <FaGithub className='git'/>
-         <span>Github</span>
+         <Link to='https://github.com/'><FaGithub className='git'/></Link>
          </button>
          <button className='sm'>
-           <FaInstagram className='ig'/>
+         <Link to='https://www.instagram.com/'> <FaInstagram className='ig'/></Link> 
            </button>
            
            <button className='sm'>
-           <FaLinkedin className='linkdn'/>
+           <Link to='https://in.linkedin.com/'><FaLinkedin className='linkdn'/></Link>
            </button>
            </div>
+            </ul>
+       
         </div>
         <div className='footer-logo'>
-            <img size={'20rem'} src={logo}></img>
+            <img size={'20rem'} src={logo} alt='/'></img>
         </div>
     </div>
     </>
