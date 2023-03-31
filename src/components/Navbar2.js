@@ -14,7 +14,7 @@ const Navbar2 = () => {
                 </li>
 
                 <li>
-                    <Link to='/'>Share Experiences</Link>
+                    <Link to='/experience'>Share Experiences</Link>
                 </li>
                 <li>
                     <Link to='/'>Resources</Link>

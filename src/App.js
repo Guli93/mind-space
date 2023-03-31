@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Login from './components/Login';
 import Blogs from './components/Blogs';
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
+import Experience from './components/Experience';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
   <Route exact path='/' element={<Home/>}/> 
   <Route  path='/login' element={<Login/>}/> 
   <Route  path='/blog' element={<Blogs/>}/> 
+  <Route  path='/experience' element={<Experience/>}/> 
   </Routes>
  
   <Footer/>
