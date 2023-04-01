@@ -29,7 +29,7 @@ pets Recommendation</div>
 </div>
 <div className='right'>
 <div className='box boxr box4'> 
-  Group Coucelling
+  Group Councelling
   <img src={box4} ></img> 
   </div>
 <div className='box boxr box5'>

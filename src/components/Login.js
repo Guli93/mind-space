@@ -37,7 +37,7 @@ const Login = () => {
 
 
                             <div className='social-text'>
-                                <hr className='social-text-line'></hr><span>or connect wit</span><hr className='social-text-line'></hr>
+                                <hr className='social-text-line'></hr><span>or connect with</span><hr className='social-text-line'></hr>
                             </div>
                             <div className='flex mid'>
                                 <button className='sm'>

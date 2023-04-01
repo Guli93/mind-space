@@ -9,6 +9,9 @@ body,html{
     margin: 0; 
     padding: 0;
 }
+button{
+  white-space: nowrap;
+}
 
 ul li a{
   text-decoration: none;
@@ -97,6 +100,8 @@ padding: 0 30px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  
+  
   
 }
 .home-container{
@@ -349,8 +354,8 @@ padding: 60px 70px;
 
 .story-box {
   border: 8px solid rgba(156, 139, 139, 0.55);
-  width: 256px;
-  height: 320px;
+  width: 276px;
+  height: 340px;
   background-image: url(./images/story1.png);
   background-position: center;
   background-size: cover;
@@ -480,7 +485,7 @@ box-shadow:
   
 }
 .astro img{
-  width: 20rem;
+  width: 24rem;
   transition: 3s;
 }
 .astro img:hover{
@@ -764,14 +769,70 @@ font-size: 14px;
 @media screen and (max-width: 1193px) {
 
   html {
+    font-size: 15px;
+  }
+
+  .home-container{
+    padding: 60px  0;
+    justify-content: center;
+  }
+
+  .home-text{
+    text-align: center;
+  }
+  .search{
+    margin-top: 40px;
+  }
+  .mid-page{
+    padding: 0 20px;
+  }
+
+  .text{
+    width: 100%;
+    text-align: unset;
+    padding-bottom: 30px;
+  }
+
+  .boxl{
+    padding-right: 3rem;
     font-size: 14px;
+   white-space: nowrap;
+
+  }
+  .boxr{
+    padding-left: 3rem;
+    font-size: 14px;
+    white-space: nowrap;
+
+  }
+  .boxl img{
+    margin: 0 2rem 0 0;
+  }
+  .boxr img{
+    margin: 0 0 0 2rem;
+    width: 1.7rem;
+  }
+  .line{
+    border-left: 3px solid #FFFFFE;
+    height: 321px;
+  }
+  .dot{
+    left: -11px;
+    border: 10px solid #FFF;
   }
   .stories{
     flex-direction: column;
     
   }
   .story-box {
-    margin: 2.3rem 0; 
+    margin: 2.6rem 0; 
+    width: 320px;
+   height: 400px;
+  }
+
+  .sub-story-box{
+    top: 22.5rem;
+   left: 3.5rem;
   }
  .arrow{
   display: none;
@@ -786,7 +847,26 @@ font-size: 14px;
  .love{
   padding: 20px;
  }
- .box{
-  
+ .love-search{
+  width: 26rem;
+  height: 2.5rem;
+ }
+ .btn{
+  padding: 0.1rem 1.5rem;
+  font-size: 12px;
+ }
+.astro2,.astro4,.astro5{
+  display: none;
+}
+
+ .footer{
+  padding: 27px 1rem 27px 1rem;
+ }
+ .footer-text ul{
+  padding-left: 0;
+  font-size: .85rem;
+ }
+ .footer img{
+  width: 18rem;
  }
 }
