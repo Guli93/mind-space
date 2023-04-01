@@ -95,6 +95,9 @@ padding: 0 30px;
   background-repeat: no-repeat;
   
 } */
+.home{
+  height: 100%;
+}
 .bg2{
   background-image: url(./images/bg2.png);
   background-size: cover;
@@ -504,6 +507,7 @@ box-shadow:
   line-height: 30px;
   justify-content: space-between;
   align-items: center;
+  
 
 }
 .footer img{
@@ -567,6 +571,7 @@ box-shadow:
     display: flex;
     justify-content: center;
     padding: 10px 0;
+    white-space: nowrap;
 }
 
 header{
