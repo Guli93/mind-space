@@ -3,6 +3,7 @@
 body,html{
   scroll-behavior: smooth;
   overflow-x: hidden;
+
 }
 *{
    box-sizing: border-box;
@@ -103,6 +104,7 @@ padding: 0 30px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
   
   
   
@@ -789,41 +791,45 @@ font-size: 14px;
     margin-top: 40px;
   }
   .mid-page{
-    padding: 0 20px;
+    padding: 0 15px;
   }
 
   .text{
     width: 100%;
     text-align: unset;
     padding-bottom: 30px;
+    text-align: center;
   }
 
   .boxl{
-    padding-right: 3rem;
-    font-size: 14px;
+    padding-right: 2rem;
+    font-size: 13px;
    white-space: nowrap;
+   margin: 3rem 0;
 
   }
   .boxr{
-    padding-left: 3rem;
-    font-size: 14px;
+    padding-left: 2rem;
+    font-size: 13px;
     white-space: nowrap;
+    margin: 3rem 0;
 
   }
   .boxl img{
-    margin: 0 2rem 0 0;
+    margin: 0 1.5rem 0 0;
+    width: 1.7rem;
   }
   .boxr img{
-    margin: 0 0 0 2rem;
+    margin: 0 0 0 1.5rem;
     width: 1.7rem;
   }
   .line{
-    border-left: 3px solid #FFFFFE;
-    height: 321px;
+    border-left: 2.7px solid #FFFFFE;
+    height: 302px;
   }
   .dot{
-    left: -11px;
-    border: 10px solid #FFF;
+    left: -10px;
+    border: 9px solid #FFF;
   }
   .stories{
     flex-direction: column;
@@ -850,15 +856,19 @@ font-size: 14px;
   flex-direction: column;
  }
  .love{
-  padding: 20px;
+  padding: 20px 15px;
  }
  .love-search{
-  width: 26rem;
+  width:100%;
   height: 2.5rem;
+ }
+ .btns{
+ flex-wrap: wrap;
  }
  .btn{
   padding: 0.1rem 1.5rem;
   font-size: 12px;
+  margin: 7px 10px;
  }
 .astro2,.astro4,.astro5{
   display: none;
@@ -872,6 +882,12 @@ font-size: 14px;
   font-size: .85rem;
  }
  .footer img{
-  width: 18rem;
+  width: 14rem;
+ }
+ .Links{
+  display: none;
+ }
+ .authentication{
+  display: none;
  }
 }
