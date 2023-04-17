@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../images/logo.png';
 import { Link } from 'react-router-dom';
-import { FaBars ,FaCross} from 'react-icons/fa';
+import { FaBars ,FaTimes} from 'react-icons/fa';
 
 
 const Navbar = () => {
+    const [showMediaIcons,setshowMediaIcons]=useState(false);
     return (
         <>
             <nav className='main-nav'>
@@ -26,8 +27,9 @@ const Navbar = () => {
                 </div>
 
                 <div className='mobile'>
-                    <FaBars className='ham'/>
-                    <FaCross className='cross'/>
+                   <a href='#' onClick="showMediaIcons(!showMediaIcons)"><FaBars className='ham'/>
+                    <FaTimes className='cross'/>
+                    </a> 
                 </div>
             </nav>
         </>
