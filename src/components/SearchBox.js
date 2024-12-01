@@ -2,13 +2,13 @@ import React from 'react';
 import { FaSearch } from 'react-icons/fa';
 
 
-const SearchBox = () => {
+const SearchBox = (props) => {
   return (
 <>
-<div className='search'>
-<div class="search-container">
+<div data-aos={props['data-aos']} data-aos-delay ="100"className='search'>
+<div  className="search-container">
   <form action="#">
-    <div class="search-box">
+    <div className="search-box">
       <input type="text" placeholder="Search..."/>
       <button type="submit"><FaSearch/></button>
       

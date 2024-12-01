@@ -1,30 +1,54 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import { FaGoogle,FaFacebook} from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
+import { validate } from './validate';
+import { useDispatch } from 'react-redux';
+import { addUser } from '../utils/userSlice';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+  const navigate=useNavigate();
+  const dispatch=useDispatch();
+  const emailRef=useRef(null);
+  const passRef=useRef(null);
+  const [loginErr,setLoginErr]=useState(null);
+
+  const handleSignupBtn = (e) => {
+   e.preventDefault();
+    const email = emailRef.current.value;
+    const password = passRef.current.value;
+    const validationMessage = validate(email, password);
+    setLoginErr(validationMessage)
+    if (validationMessage === null) { // null means all validations passed
+        dispatch(addUser(true));
+        navigate('/')
+    } 
+}
+
+
     return (
         <>
          
                 <div className="home bg2">
-                    <div className="box">
-                        <div className="container">
+                    <div  className="box">
+                        <form className="container">
                             <div className="top-header">
                                 <span>Have an account?</span>
                                 <header>Login</header>
                             </div>
 
                             <div className="input-field">
-                                <input type="text" className="input" placeholder="Username" required />
+                                <input ref={emailRef} type="text" className="input" placeholder="Username or email" required />
                                 <i className="fa-solid fa-user"></i>
                             </div>
                             <div className="input-field">
-                                <input type="password" className="input" placeholder="Password" required />
+                                <input  ref={passRef} type="password" className="input" placeholder="Password" required />
                                 <i className="fa-solid fa-lock"></i>
                             </div>
                             <div className="input-field">
-                                <input type="submit" className="submit" value="login" />
+                                <button onClick={handleSignupBtn} className='submit'>login</button>
                             </div>
+                             <p className='loginErr'>{loginErr}</p>
                             <div className="bottom">
                                 <div className="login-left">
                                     <input type="checkbox" id="check" />
@@ -52,7 +76,8 @@ const Login = () => {
                                     <FaLinkedin className='linkdn' />
                                 </button>
                             </div>
-                        </div>
+                        
+                        </form>
                     </div>
                 </div>
            

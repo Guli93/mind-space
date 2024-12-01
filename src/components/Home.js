@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import homeImg from '../images/home-astronaut.png';
 import SearchBox from './SearchBox';
 import MidPage from '../components/MidPage';
@@ -8,12 +8,14 @@ import Love from '../components/Love';
 import Astronaut from '../components/Astronaut';
 
 
+
 const Home = () => {
+
   return (
-    <div className='bg2'>
+    <div data-aos-easing="ease-in-out"className='bg2'>
     <div className='home'>
         <div className='home-container'>
-        <div className='home-text'>
+        <div data-aos="fade-right"data-aos-delay="100" className='home-text'>
             <h1>
                 <span className='purple'>L</span><span className='white'>ETS</span>
             </h1>
@@ -29,22 +31,22 @@ const Home = () => {
 
             <p>TO THE SPACE OF MIND</p>
         </div>
-        <div className='home-atro'>
+        <div data-aos="fade-up" data-aos-delay="200" className='home-atro'>
             <img className='home-img' src={homeImg} alt="/"></img>
         </div>
        <div>
-       <SearchBox/>
+       <SearchBox data-aos="fade-left"  />
        </div>
     </div>
    
     </div>
 
 
-    <MidPage/>
-  <Pages/>
-  <Stories/>
+    <MidPage data-aos="fade-left" />
+  <Pages data-aos="fade-up" />
+  <Stories data-aos="zoom out"/>
   <Love/>
-  <Astronaut/>
+  <Astronaut data-aos="fade-up"/>
     
     </div>
   )

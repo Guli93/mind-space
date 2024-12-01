@@ -6,10 +6,10 @@ import box4 from '../images/box4.png';
 import box5 from '../images/box5.png';
 import box6 from '../images/box6.png';
 
-const Pages = () => {
+const Pages = (props) => {
   return (
 <>
-<div className='pages bg'>
+<div data-aos={props['data-aos']} className='pages bg'>
     
 <div className='left'>
 <div className='box boxl box1'>

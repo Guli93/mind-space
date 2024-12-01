@@ -1,10 +1,12 @@
 
 
 body,html{
-  scroll-behavior: smooth;
+overscroll-behavior: none; 
+scroll-behavior: smooth;
   overflow-x: hidden;
 
 }
+
 *{
    box-sizing: border-box;
     margin: 0; 
@@ -36,8 +38,9 @@ li a{
 .main-nav{
   background-color: #160A21;
   display: grid;
-  grid-template-columns: 35rem 1fr .3fr 7rem ;
+  grid-template-columns: 28rem 1fr .3fr 1.2rem;
   align-items: center;
+  text-align: center;
   height: 62px;
 }
 .mobile{
@@ -351,13 +354,16 @@ padding: 60px 70px;
   text-align: center;
 
 }
-.stories{
+.story-container{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 60px;
+  padding: 60px ;
+  overflow: hidden;
+  /* margin: 0 190px; */
   
 }
+
 
 
 .story-box {
@@ -369,9 +375,11 @@ padding: 60px 70px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  /* margin:0 1.8rem; */
+  margin:0 1.8rem;
+  transition: transform 0.5s ease-in-out;
  
 }
+
 .story-box:hover {
 transform: scale(1.1);
 
@@ -411,6 +419,16 @@ transform: scale(1.1);
   color:#1E1E1E;
   padding: 4px;
   border-radius: 20px;
+ 
+  top: 300px;
+  border: none;
+ 
+}
+.left{
+  left: 0;
+}
+.right{
+  left:1300px
 }
 
 /* LOVE PAGE CSS */
@@ -560,6 +578,11 @@ box-shadow:
     /* min-height: 60vh; */
 }
 
+.loginErr{
+  color: white;
+  opacity: 0.5;
+  margin-left: 15px;
+}
 .container{
     width: 350px;
     display: flex;
@@ -773,7 +796,9 @@ font-size: 14px;
 .custom-form button[type="submit"]:hover {
   background-color: #2f0359;
 }
-
+.sidebar{
+  display: none;
+}
 
 
 @media screen and (max-width: 1193px) {
@@ -896,16 +921,75 @@ font-size: 14px;
  .mobile{
   display: block;
  }
- .ham,.cross{
-  color: white;
-  font-size: 1.5rem;
- }
- .cross{
-  display: none;
- }
+
  .main-nav{
   display: flex;
   justify-content: space-between;
   padding: 0 15px;
  }
+
+ /* PHONE NAVBAR */
+ /* .white-nav{
+  display: none;
+ } */
+ .phone-nav{
+  background-color: #160A21;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+ }
+ .phone-nav a{
+  line-height: 3;
+ }
+ .authentication{
+  display: none;
+  flex-direction: column;
+ }
+
+
+ .sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  z-index: 1000;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease-in-out; 
+  padding-top: 100px;
 }
+.sidebar.open {
+  transform: translateX(-100%); 
+}
+.sidebarIcons {     /**ham and cross**/
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.sidebarLinks li{
+   font-size: 17px;
+   line-height: 2.5;
+}
+
+}
+
+
+
+
+
+
+
+
+
+

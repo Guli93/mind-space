@@ -2,9 +2,10 @@ import React from 'react';
 import { FaHome } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-const Navbar2 = () => {
+const Navbar2 = (props) => {
   return (
     <>
+
     <nav className='white-nav'>
     <Link to='/'><FaHome size={'3em'} className='homeIcon'/></Link>
         <div className='Links'>
