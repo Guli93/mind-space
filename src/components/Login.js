@@ -52,7 +52,7 @@ const Login = () => {
                             <div className="bottom">
                                 <div className="login-left">
                                     <input type="checkbox" id="check" />
-                                    <label for="check">Remember Me</label>
+                                    <label htmlFor="check">Remember Me</label>
                                 </div>
                                 <div className="login-right">
                                     <label><a href="/">Forgot password?</a></label>
