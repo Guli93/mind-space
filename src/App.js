@@ -20,7 +20,7 @@ function App() {
 
   return (
 
-<BrowserRouter basename='/mind-space'>
+<BrowserRouter basename='/'>
 
    <Navbar/>
    <Navbar2/>
